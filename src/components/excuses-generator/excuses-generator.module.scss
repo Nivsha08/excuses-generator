@@ -3,13 +3,14 @@
 .wrapper {
   margin: 0 auto;
   padding: 25px 50px 75px;
+  min-height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
   box-shadow: 0 4px 10px $shadow-color;
-  width: 60%;
+  width: 65%;
   background-color: $light-primary;
 
   h1 {
@@ -26,7 +27,7 @@
   }
 
   .button {
-    margin: 48px 0 0;
+    margin: 36px 0 0;
     padding: 12px 36px;
     text-align: center;
     cursor: pointer;
@@ -39,11 +40,10 @@
     color: $secondary;
     background-color: $accent;
     box-shadow: 0 4px 1px $shadow-color;
-    transition: transform .3s ease-out;
+    transition: background-color .3s ease-out;
 
     &:hover {
       background-color: lighten($accent, 2%);
-      transform: translateY(-5px);
     }
 
     &:active {

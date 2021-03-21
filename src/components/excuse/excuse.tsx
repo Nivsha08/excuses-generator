@@ -1,15 +1,26 @@
 import React from "react";
 import styles from "./excuse.module.scss";
 import { ClassicBadge } from "../classis-badge/classic-badge";
+import { ExcellentBadge } from "../excellent-badge/excellent-badge";
+import { ExcuseType } from "../../excuses";
 
-export const Excuse = () => {
+type ExcuseProps = {
+  excuse: ExcuseType;
+};
+
+export const Excuse = ({ excuse }: ExcuseProps) => {
+  const { text, isClassic, isExcellent } = excuse;
+
   return (
     <div className={styles.excuseWrapper}>
       <div className={styles.text}>
-        <div className={styles.excuse}>הנה יופי של תירוץ לדוגמא</div>
+        <div className={styles.excuse}>&rdquo; {text} &ldquo;</div>
         <div className={styles.credit}>(רועי לבס)</div>
       </div>
-      <ClassicBadge />
+      <div className={styles.badges}>
+        {isClassic && <ClassicBadge />}
+        {isExcellent && <ExcellentBadge />}
+      </div>
     </div>
   );
 };

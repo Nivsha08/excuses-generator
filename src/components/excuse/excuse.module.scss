@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   padding: 15px 30px;
+  min-height: 250px;
 
   .text {
     display: flex;
@@ -16,6 +17,8 @@
       color: $white;
       font-weight: bold;
       font-size: 48px;
+      font-style: italic;
+      margin-bottom: 12px;
     }
 
     .credit {
@@ -23,5 +26,13 @@
       font-size: 16px;
       margin: 0 0 24px;
     }
+  }
+
+  .badges {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
   }
 }
