@@ -1,10 +1,12 @@
+import { shuffle } from "lodash";
+
 export interface ExcuseType {
   text: string;
   isClassic?: boolean;
   isExcellent?: boolean;
 }
 
-export const excusesList: ExcuseType[] = [
+export const excusesList: ExcuseType[] = shuffle([
   { text: "אני בציפורלה הערב", isExcellent: true },
   { text: "עוזר לחבר להרכיב סטנד לקלידים, לא בטוח שאספיק" },
   {
@@ -47,7 +49,7 @@ export const excusesList: ExcuseType[] = [
   { text: "יש לי כרטיסים לעיר הזאת ברוסית פעם שלישית השבוע", isClassic: true },
   { text: "אני מחפש תחנת דלק עם גז רגע ויוצא" },
   { text: "משלים הרשימה השחורה עם ההורים, לא אוכל היום" },
-  { text: "אני בהקרנה של לה לה לנד ואז שבוע מעכל את זה", isClassic: true },
+  { text: "אני בהקרנה מורחבת של לה לה לנד ביפו היום", isClassic: true },
   { text: "אני חוגג פסח במסיבת פורים במונש הערב" },
   { text: "אני ביום שליחת הודעות חג שמח, לא אספיק", isClassic: true },
-];
+]);
