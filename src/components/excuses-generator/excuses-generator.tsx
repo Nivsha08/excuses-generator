@@ -5,8 +5,9 @@ import { Excuse } from "../excuse/excuse";
 
 export const ExcusesGenerator = () => {
   return (
-    <div>
-      hey app!
+    <div className={styles.wrapper}>
+      <h1>מחולל התירוצים של רועי לבס</h1>
+      <div className={styles.divider} />
       <Excuse />
     </div>
   );

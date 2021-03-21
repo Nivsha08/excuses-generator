@@ -1,3 +1,27 @@
-.excuse {
-  color: red;
+@import 'src/shared/variables';
+
+.excuseWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 30px;
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .excuse {
+      font-family: $excuse-font;
+      color: $white;
+      font-weight: bold;
+      font-size: 48px;
+    }
+
+    .credit {
+      color: $white;
+      font-size: 16px;
+      margin: 0 0 24px;
+    }
+  }
 }

@@ -1,0 +1,21 @@
+@import 'src/shared/variables';
+
+.classicWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 36px;
+  background-color: $light-gold;
+  border-radius: 10px;
+
+  span {
+    font-weight: bold;
+    color: $gold;
+  }
+
+  img {
+    width: 28px;
+    height: 28px;
+    margin-left: 6px;
+  }
+}

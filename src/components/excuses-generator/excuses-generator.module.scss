@@ -1,0 +1,27 @@
+@import 'src/shared/variables';
+
+.wrapper {
+  margin: 0 auto;
+  padding: 25px 50px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px $shadow-color;
+  width: 60%;
+  background-color: $light-primary;
+
+  h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: $primary-text-color;
+  }
+
+  .divider {
+    height: 2px;
+    margin-bottom: 15px;
+    width: 20%;
+    background-color: $primary;
+  }
+}
