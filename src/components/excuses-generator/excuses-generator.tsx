@@ -9,6 +9,7 @@ export const ExcusesGenerator = () => {
       <h1>מחולל התירוצים של רועי לבס</h1>
       <div className={styles.divider} />
       <Excuse />
+      <button className={styles.button}>רוצה לשבת היום?</button>
     </div>
   );
 };

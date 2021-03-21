@@ -2,7 +2,7 @@
 
 .wrapper {
   margin: 0 auto;
-  padding: 25px 50px 100px;
+  padding: 25px 50px 75px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,5 +23,31 @@
     margin-bottom: 15px;
     width: 20%;
     background-color: $primary;
+  }
+
+  .button {
+    margin: 48px 0 0;
+    padding: 12px 36px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: $text-font;
+    color: $secondary;
+    background-color: $accent;
+    box-shadow: 0 4px 1px $shadow-color;
+    transition: transform .3s ease-out;
+
+    &:hover {
+      background-color: lighten($accent, 2%);
+      transform: translateY(-5px);
+    }
+
+    &:active {
+      background-color: lighten($accent, 5%);
+    }
   }
 }
